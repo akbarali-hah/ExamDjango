@@ -11,12 +11,34 @@
         text-align: center;
         text-transform: uppercase;
     }
+
     h3 {
         text-align: center;
         color: deepskyblue;
     }
 </style>
 <body>
+{#<div class="setting ht-setting">#}
+{#    <ul class="ht-setting-list">#}
+{#        <li>#}
+{#            {% if user.is_authenticated %}#}
+{#                <a href="{% url 'prof' user.pk %}">My Account</a>#}
+{#            {% else %}#}
+{#                <a href="{% url 'login_page' %}">My Account</a>#}
+{#            {% endif %}#}
+{#        </li>#}
+{#        {% if user.is_authenticated %}#}
+{#            <li>#}
+{#                <form action="{% url 'logout_page' %}" method="post">#}
+{#                    {% csrf_token %}#}
+{#                    <button type="submit">Logout</button>#}
+{#                </form>#}
+{#            </li>#}
+{#        {% else %}#}
+{#            <li><a href="{% url 'login_page' %}">Sign In</a></li>#}
+{#        {% endif %}#}
+{#    </ul>#}
+{#</div>#}
 <h1>HomePage ^_^ </h1>
 
 <a href="{% url 'product_list_page' %}">

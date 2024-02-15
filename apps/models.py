@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser
-from django.db.models import Model, CharField, ImageField, PositiveIntegerField, FloatField, DateTimeField
+from django.db.models import (CharField, DateTimeField, FloatField, ImageField,
+                              Model, PositiveIntegerField)
 from django_ckeditor_5.fields import CKEditor5Field
 from django_resized import ResizedImageField
 

@@ -1,7 +1,8 @@
 from django.contrib.auth.hashers import make_password
 from django.core.exceptions import ValidationError
-from django.forms import ModelForm, CharField, PasswordInput
-from apps.models import User, Product
+from django.forms import CharField, ModelForm, PasswordInput
+
+from apps.models import Product, User
 
 
 class RegisterForm(ModelForm):

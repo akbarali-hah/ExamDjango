@@ -1,8 +1,8 @@
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import include, path
 
-from root.settings import STATIC_URL, MEDIA_URL, STATIC_ROOT, MEDIA_ROOT, DEBUG
+from root.settings import DEBUG, MEDIA_ROOT, MEDIA_URL, STATIC_ROOT, STATIC_URL
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add Product with Form</title>
+    <title>Add Product Page</title>
 </head>
 <body>
 <h3>
     <a href="{% url 'product_list_page' %}">Back</a>
 </h3>
-<h1>Add Product</h1>
+<h1>{{ action }} Product</h1>
 <form action="{% url 'add_product_page' %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form }}

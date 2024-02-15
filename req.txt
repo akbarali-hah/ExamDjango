@@ -2,5 +2,8 @@ asgiref==3.7.2
 Django==5.0.1
 django-ckeditor-5==0.2.11
 django-resized==1.0.2
+mccabe==0.7.0
 pillow==10.2.0
+pycodestyle==2.11.1
+pyflakes==3.2.0
 sqlparse==0.4.4

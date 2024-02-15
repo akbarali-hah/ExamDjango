@@ -1,19 +1,21 @@
-import io
 import csv
+import io
+
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from django.utils.html import format_html
-from django.utils.translation import gettext_lazy as _
 from django.forms import forms
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.urls import path
-from apps.models import User, Product
+from django.utils.html import format_html
+from django.utils.translation import gettext_lazy as _
+
+from apps.models import Product, User
 
 
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
-    list_display = ['username', 'email', 'first_name', 'last_name', 'is_staff', 'user_image']
+    list_display = ['user_image', 'username', 'email', 'first_name', 'last_name', 'is_staff']
 
     fieldsets = (
         (None, {"fields": ("username", "password")}),
